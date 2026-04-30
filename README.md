@@ -14,6 +14,30 @@
 - **📰 News & Updates**: Stay informed with the latest updates from the Election Commission of India.
 - **📍 ECI Headquarters**: Integrated Google Maps view of the Nirvachan Sadan in New Delhi.
 
+## 🏆 Prompt Wars Submission Details
+
+### Chosen Vertical
+**Civic Guide / Election Assistant**
+This project focuses on educating citizens and first-time voters about the Indian democratic process, making electoral information accessible, engaging, and easy to understand.
+
+### Approach and Logic
+The application employs a dual-layered approach to civic education:
+1. **Structured Visual Learning**: Static, highly visual components (Timeline, Flowchart, Glossary, Statistics) break down complex procedures into easily digestible chunks.
+2. **Dynamic Conversational Learning**: The AI-powered "VoteBot" handles personalized, open-ended queries. 
+The logic strictly binds the AI's domain context via its system prompt. By instructing the model to *only* answer questions related to Indian elections, the ECI, and the constitutional framework, we ensure responsible AI usage and prevent hallucinations or off-topic discussions.
+
+### How the Solution Works
+- **Frontend Architecture**: Built as a Single Page Application (SPA) using React 19 and Vite, ensuring fast load times and a responsive UI.
+- **Styling**: Utilizes a custom, premium design system featuring glassmorphism, fluid animations, and a vibrant color palette tailored to an Indian civic theme.
+- **AI Integration**: Integrates the `gemini-1.5-flash` model via the `@google/generative-ai` SDK directly in the browser. User queries are prepended with a strong system prompt enforcing the civic domain before being sent to the Gemini API.
+- **Interactive Elements**: Features like the Intersection Observer-driven animated statistics and interactive timeline enhance user engagement.
+
+### Assumptions Made
+- The target audience primarily consists of first-time voters and general citizens seeking simplified explanations of the electoral process.
+- Users will have stable internet access to interact with the Gemini API.
+- For this MVP, a serverless frontend-only architecture calling the Gemini API directly is sufficient to demonstrate the core capability and logic.
+- Information provided by the AI is for educational guidance and relies on the foundational knowledge of the Gemini 1.5 Flash model regarding Indian civic processes.
+
 ## 🚀 Tech Stack
 
 - **Frontend**: React 19 (Vite)
