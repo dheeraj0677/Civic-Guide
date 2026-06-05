@@ -12,7 +12,6 @@
 - **📚 Election Glossary**: Quick definitions of key terms like EVM, VVPAT, MCC, and NOTA.
 - **🗺️ Process Flowchart**: A visual representation of how a single vote travels from a polling booth to the final ECI result.
 - **📰 News & Updates**: Stay informed with the latest updates from the Election Commission of India.
-- **📍 ECI Headquarters**: Integrated Google Maps view of the Nirvachan Sadan in New Delhi.
 
 ## 🏆 Prompt Wars Submission Details
 
@@ -31,12 +30,6 @@ The logic strictly binds the AI's domain context via its system prompt. By instr
 - **Styling**: Utilizes a custom, premium design system featuring glassmorphism, fluid animations, and a vibrant color palette tailored to an Indian civic theme.
 - **AI Integration**: Integrates the `gemini-1.5-flash` model via the `@google/generative-ai` SDK directly in the browser. User queries are prepended with a strong system prompt enforcing the civic domain before being sent to the Gemini API.
 - **Interactive Elements**: Features like the Intersection Observer-driven animated statistics and interactive timeline enhance user engagement.
-
-### Assumptions Made
-- The target audience primarily consists of first-time voters and general citizens seeking simplified explanations of the electoral process.
-- Users will have stable internet access to interact with the Gemini API.
-- For this MVP, a serverless frontend-only architecture calling the Gemini API directly is sufficient to demonstrate the core capability and logic.
-- Information provided by the AI is for educational guidance and relies on the foundational knowledge of the Gemini 1.5 Flash model regarding Indian civic processes.
 
 ## 🚀 Tech Stack
 
