@@ -86,4 +86,4 @@ This application is for educational purposes only. Data is sourced from the offi
 
 ---
 
-Built with ❤️ for the Google Solution Challenge / Prompt Wars.
+
